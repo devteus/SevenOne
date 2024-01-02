@@ -1,7 +1,11 @@
+using SevenOne.Web;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.ConfigureDi();
 
 var app = builder.Build();
 
